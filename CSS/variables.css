@@ -1,0 +1,15 @@
+
+
+:root {
+  --background: #FDF8F2;      /* Soft Ivory */
+  --primary: #F8C8DC;         /* Blush Pink */
+  --secondary: #B7D2B1;       /* Sage Green */
+  --text-dark: #333333;       /* Charcoal */
+  --text-light: #7A5C58;      /* Rose Brown */
+  --highlight: #F4C95D;       /* Warm Gold */
+  --border: #D9CFC1;          /* Light Taupe */
+
+  /* Optional darker theme colors */
+  --alert-deep: #732C2C;
+  --btn-dark: #2D4A33;
+}

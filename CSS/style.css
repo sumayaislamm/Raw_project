@@ -1,0 +1,116 @@
+
+@import url('CSS\variables.css');
+
+body, ul {
+      margin: 0;
+      padding: 0;
+      background-color: var(--background);
+}
+#first_nav {
+      background-color: var(--alert-deep);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 15px 200px;
+      
+    }
+
+#first_nav li {
+      color: var(--highlight);
+      font-size: 20px;
+      font-weight: 600;
+    }
+.main_nav{
+    display: flex;
+    justify-content: space-between;
+    border: solid rgba(78, 77, 77, 0.299) 1px;
+    padding: 10px 100px 0px 100px;
+    align-items: center;
+    background-color: var(--primary);
+
+}
+.nav_left{
+        /* width: 50%; */
+        display: flex;
+        justify-content: space-evenly;
+        gap: 30px;
+        list-style: none;
+        padding: 20px 0px;
+        text-decoration: none;
+        background-color: var(--primary);
+    }
+
+.nav_left  a {
+      color: black;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+.nav_right{
+        display: flex;
+        justify-content: space-evenly;
+        list-style: none;
+        gap: 30px;
+        padding: 20px 0px;
+        text-decoration: none;
+         background-color: var(--primary);
+}
+.nav_right  a {
+      color: black;
+      font-size: 20px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+.get_btn{
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(230, 23, 147);
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+    top: -5px;
+}
+
+/* First Section */
+.first_section{
+   padding: 0px 100px;
+}
+.first_section h3{
+    font-size: 25px;
+    color: rgb(230, 23, 147);
+}
+.first_section h1{
+    font-size: 150px; 
+    color: var(--primary);
+}
+
+.after_hearding{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px 0px 100px;
+    align-items: center;
+    padding: 20px;
+}
+.after_hearding p{
+    font-size: 30px;
+    color: rgb(230, 23, 147) ;
+}
+
+.after_hearding_btn{
+    display: flex;
+    gap: 15px;
+}
+.p_btn{
+    background-color: rgb(230, 23, 147);
+    padding: 10px 45px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 12px;
+    font-weight: 600;
+    position: relative;
+}
