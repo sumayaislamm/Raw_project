@@ -42,7 +42,7 @@ body, ul {
     }
 
 .nav_left  a {
-      color: black;
+      color: rgb(230, 23, 147);
       font-size: 20px;
       font-weight: 600;
       text-decoration: none;
@@ -58,7 +58,7 @@ body, ul {
          background-color: var(--primary);
 }
 .nav_right  a {
-      color: black;
+      color: rgb(230, 23, 147);
       font-size: 20px;
       font-weight: 600;
       text-decoration: none;
@@ -78,10 +78,12 @@ body, ul {
 /* First Section */
 .first_section{
    padding: 0px 100px;
+   margin-top: -25px ;
+   background-color:  rgb(209, 79, 157);
 }
 .first_section h3{
     font-size: 25px;
-    color: rgb(230, 23, 147);
+    color:  var(--primary);
 }
 .first_section h1{
     font-size: 150px; 
@@ -97,7 +99,7 @@ body, ul {
 }
 .after_hearding p{
     font-size: 30px;
-    color: rgb(230, 23, 147) ;
+    color: var(--primary);
 }
 
 .after_hearding_btn{
@@ -105,11 +107,11 @@ body, ul {
     gap: 15px;
 }
 .p_btn{
-    background-color: rgb(230, 23, 147);
+    background-color: var(--primary);
     padding: 10px 45px;
     border: none;
     border-radius: 5px;
-    color: white;
+    color: rgb(209, 79, 157);
     font-size: 12px;
     font-weight: 600;
     position: relative;
