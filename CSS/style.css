@@ -123,6 +123,7 @@ body, ul {
   display: flex;
   gap: 20px;
   flex-wrap: wrap;
+  margin-top: 15px;
 }
 
 .card {
@@ -131,4 +132,79 @@ body, ul {
   width: 200px;
   border-radius: 8px;
   box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+}
+/* Container for cards */
+#cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background: #f8f9fa;
+}
+
+/* Card design */
+.card {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  opacity: 0;                     /* Hidden before animation */
+  transform: translateY(30px);    /* Move down slightly before appearing */
+  animation: fadeInUp 6.6s forwards;
+}
+
+/* Card title */
+.card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+/* Card text */
+.card p {
+  font-size: 0.95rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+/* Hover effect */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Animation keyframes */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 15;
+    transform: translateY(0);
+  }
+}
+
+.second_section {
+  display: flex;               /* Puts images side by side */
+  justify-content: center;     /* Centers them horizontally */
+  align-items: center;         /* Aligns them vertically */
+  gap: 20px;                   /* Adds space between images */
+  padding: 20px;
+  background-color: #f9f9f9;   /* Optional: light background */
+}
+
+.second_section img {
+  width: 250px;                /* Control image size */
+  height: auto;                /* Keeps proportions */
+  border-radius: 10px;         /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);  /* Soft shadow */
+  transition: transform 0.3s ease;         /* Smooth hover effect */
+}
+
+.second_section img:hover {
+  transform: scale(1.05);      /* Slight zoom on hover */
 }
