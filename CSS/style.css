@@ -73,7 +73,7 @@ ul {
   background-color: transparent;
   color: #b13685;
   border: 2px solid #b13685; /* thickness, style, color */
-  border-radius: 50px;        /* rounded edges like Webflow buttons */
+  border-radius: 50px;        /* rounded buttons */
   padding: 10px 25px;         /* space inside button */
   cursor: pointer;            /* pointer on hover */
   transition: all 0.3s ease;
@@ -84,81 +84,6 @@ ul {
   color: #fff;
 }
 
-
-
-
-/* #first_nav {
-      background-color: var(--alert-deep);
-      list-style: none;
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 15px 200px;
-      
-    }
-
-#first_nav li {
-      color: var(--highlight);
-      font-size: 20px;
-      font-weight: 600;
-    }
-.main_nav{
-    display: flex;
-    justify-content: space-between;
-    border: solid rgba(78, 77, 77, 0.299) 1px;
-    padding: 10px 100px 0px 100px;
-    align-items: center;
-
-}
-.nav_left{
-        display: flex;
-        justify-content: space-evenly;
-        gap: 30px;
-        list-style: none;
-        padding: 20px 0px;
-        text-decoration: none;
-    }
-
-.nav_left  a {
-      color: rgb(230, 23, 147);
-      font-size: 20px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-
-.nav_right{
-        display: flex;
-        justify-content: space-evenly;
-        list-style: none;
-        gap: 30px;
-        padding: 20px 0px;
-        text-decoration: none;
-}
-.nav_right  a {
-      color: rgb(230, 23, 147);
-      font-size: 20px;
-      font-weight: 600;
-      text-decoration: none;
-    }
-.get_btn{
-    padding: 15px;
-    border: none;
-    border-radius: 5px;
-    background-color: rgb(230, 23, 147);
-    color: white;
-    font-size: 12px;
-    font-weight: 600;
-    position: relative;
-    top: -5px;
-    cursor: pointer
-} */
-
-/* First Section */
-/* .first_section{
-   padding: 0px 100px;
-   margin-top: -25px ;
-   background-image: url("images/flower_picture 2.jpg")
-} */
 .first_section {
   padding: 0px 100px;
   background-image: url("../images/flower_picture.jpg");
