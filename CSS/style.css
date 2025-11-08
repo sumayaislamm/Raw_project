@@ -81,6 +81,7 @@ ul {
   background-color: #b13685;
   color: #fff;
 }
+
 .btn-primary {
   text-decoration: none;
   font-weight: 500;
@@ -88,31 +89,39 @@ ul {
   border-radius: 50px;
   position: relative;
   transition: color 0.3s ease;
-  background-color: #b13685; 
+  background-color: #b13685;
   color: #fff;
+  margin-bottom: 50px;
+  border: none;
 
 }
+
 .btn-primary:hover {
   color: black;
   transform: scale(1.05);
 }
+
 .first_section {
   padding: 0px 100px;
-  background-image: url("../sources/images/flower_picture.jpg");
+
+  background-color: rgb(233, 183, 213);
+  /* background-image: url("../sources/images/flower_picture.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .first_section h1 {
   padding: 80px 0px 70px;
   font-size: 100px;
-  color: var(--primary);
+  /* color: var(--primary); */
+  color: #b13685;
 }
 
 .after_hearding p {
   font-size: 30px;
-  color: var(--primary);
+  /* color: var(--primary); */
+  color: #b13685;
 }
 
 /* Container for cards */
