@@ -88,11 +88,11 @@ ul {
   padding: 20px 40px;
   border-radius: 50px;
   position: relative;
-  transition: color 0.3s ease;
+  transition: all 0.3s ease;
   background-color: #b13685;
   color: #fff;
-  margin-bottom: 50px;
   border: none;
+  cursor: pointer;
 
 }
 
@@ -104,11 +104,11 @@ ul {
 .first_section {
   padding: 0px 100px;
 
-  background-color: rgb(233, 183, 213);
-  /* background-image: url("../sources/images/flower_picture.jpg");
+  /* background-color: rgb(233, 183, 213); */
+  background-image: url("../sources/images/flower_picture.jpg");
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; */
+  background-repeat: no-repeat;
 }
 
 .first_section h1 {
@@ -183,9 +183,9 @@ ul {
   font-size: 40px;
   font-weight: 500;
   color: rgb(209, 79, 157);
-  margin: 0;
-  padding: 0;
-  line-height: 1;
+  padding: 0 20px;
+  /* line-height: 1; */
+  background: #f8f9fa;
 }
 
 .all_data_text p {
