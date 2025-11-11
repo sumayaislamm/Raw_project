@@ -112,7 +112,7 @@ ul {
 
 .first_section h1 {
   padding: 80px 0px 70px;
-  font-size: 100px;
+  font-size: 80px;
   color: #b13685;
 }
 
@@ -152,6 +152,7 @@ ul {
   padding: 40px;
   background: #f8f9fa;
 }
+
 .card {
   background-color: var(--primary);
   color: rgb(209, 79, 157);
@@ -162,18 +163,44 @@ ul {
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   opacity: 0;
-  transform: translateY(30px);
-  animation: fadeInUp 3.6s forwards;
-  
+  /* keep hidden initially */
+  transform: translateX(100px);
+  /* or translateY for vertical animation */
 }
 
+
 /* Card title */
+.card {
+  position: relative;
+  /* for button */
+  background-color: var(--primary);
+  color: rgb(209, 79, 157);
+  width: 240px;
+  height: 250px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transform: translateX(100px);
+  /* initial position */
+  transition: transform 0.6s ease, opacity 0.6s ease, box-shadow 0.3s ease;
+}
+
+.card:nth-child(even) {
+  transform: translateX(-100px);
+  /* alternate direction */
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateX(0);
+}
+
 .card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-/* Card text */
 .card p {
   font-size: 0.95rem;
   line-height: 1.4;
@@ -190,41 +217,26 @@ ul {
   position: absolute;
   bottom: 30px;
   right: 20px;
-  cursor: pointer
+  cursor: pointer;
 }
 
-.wanna_text {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 40px;
-  font-weight: 500;
-  color: rgb(209, 79, 157);
-  padding: 0 20px;
-  line-height: 1;
-  background: #f8f9fa;
-}
-
-
-
-/* Hover effect */
 .card:hover {
   transform: translateY(-5px);
   box-shadow: 0 18px 25px rgba(0, 0, 0, 0.15);
 }
 
-/* Animation keyframes */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  to {
-    opacity: 15;
-    transform: translateY(0);
-  }
+.wanna_text {
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(209, 79, 157);
+  padding: 0 20px;
+  line-height: 1;
+  background: #f8f9fa;
+  padding: 0 170px 20px 0;
 }
 
 /* Logo Section */
@@ -235,6 +247,7 @@ ul {
   background-color: #fafafa;
   padding: 40px 0;
 }
+
 .logo-slider h3 {
   margin: 0 38%;
   font-size: 20px;
@@ -267,7 +280,165 @@ ul {
   from {
     transform: translateX(0);
   }
+
   to {
     transform: translateX(-50%);
   }
+}
+
+
+
+/* Section styling */
+.solutions-section {
+  position: relative;
+  overflow: hidden;
+  padding: 100px 50px;
+  color: #fff;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Background video */
+.bg-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(50%);
+  /* darken video so text is readable */
+}
+
+/* Section content */
+.solutions-container h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.solutions-container p {
+  font-size: 18px;
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #fff;
+}
+
+/* Cards container */
+.logo-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Individual cards */
+.logo_card {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  padding: 20px;
+  width: 280px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease;
+}
+
+.logo_card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.logo_card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ffdd57;
+  /* accent color for card titles */
+}
+
+.logo_card p {
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.5;
+}
+
+
+/* FAQ Section */
+
+.faq-section {
+  padding: 80px 20px;
+  background: linear-gradient(135deg, #f8e1f4, #fce0eb);
+  text-align: center;
+}
+
+.faq-section h2 {
+  font-size: 3rem;
+  margin-bottom: 50px;
+  color: #b13685;
+  font-weight: 700;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: linear-gradient(135deg, #fff0f8, #ffe6f2);
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.faq-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.faq-question {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 25px 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.faq-question span {
+  color: #b13685;
+}
+
+.faq-icon {
+  font-size: 1.5rem;
+  color: #b13685;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.faq-item.active .faq-icon {
+  transform: rotate(45deg);
+  color: #ff69b4;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  padding: 0 30px;
+  color: #555;
+  font-size: 1rem;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 200px;
+  padding: 20px 30px 25px;
 }
