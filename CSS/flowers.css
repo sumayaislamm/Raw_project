@@ -1,6 +1,98 @@
 main {
-  padding-top: 120px;
+  padding-top: 30px;
   text-align: center;
-  color: black;
-  font-size: 40px;
+}
+.flowers-section {
+  max-width: 1200px;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.flowers-section h1 {
+  font-size: 36px;
+  color: #b13685;
+  margin-bottom: 30px;
+}
+
+#searchInput {
+  width: 60%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border: 2px solid #b13685;
+  border-radius: 25px;
+  margin-bottom: 40px;
+  font-size: 16px;
+}
+
+.flowers-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.flower-card {
+  /* background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  transition: transform 0.3s ease; */
+    position: relative;       /* important for absolute positioning inside */
+  background-color: var(--primary);
+  color: #fff;
+  width: 240px;
+  height: 320px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.flower-card:hover {
+  transform: translateY(-5px);
+}
+
+.flower-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.flower-card h3 {
+  margin: 15px 0 10px;
+  color: #b13685;
+  font-size: 18px;
+}
+
+.flower-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+
+.details-btn {
+  position: absolute;       
+  bottom: 20px;             
+  left: 50%;               
+  transform: translateX(-50%);
+  background-color: #b13685;
+  color: #fff;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.details-btn:hover {
+  background-color: #d14fa3;
+  transform: translateX(-50%) translateY(-3px);
+  box-shadow: 0 6px 15px rgba(209,79,157,0.3);
 }

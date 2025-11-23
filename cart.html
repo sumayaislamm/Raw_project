@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cart | Floral</title>
-    <link rel="stylesheet" href="CSS/cart.css" />
-    <link rel="stylesheet" href="CSS/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart | FLORAL</title>
+  <link rel="stylesheet" href="CSS/cart.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-
 <body>
-    <!-- Navbar -->
-    <header></header> 
-    <!-- Main Body -->
-    <main>
-        <h1>Here is your cart items</h1>
-    </main>
-    <!-- Footer Section -->
-    <footer>
-    </footer>
-    <!-- JS script -->
-    <script src="JS/loadNavbar.js"></script>
-</body>
 
+  <header>
+    <!-- You can include your navbar here -->
+  </header>
+
+  <main>
+    <section class="cart-section">
+      <h1>Your Cart</h1>
+      <div class="cart-items-container">
+        <!-- Cart items will be dynamically added here -->
+      </div>
+
+      <div class="cart-summary">
+        <p>Total Items: <span id="totalItems">0</span></p>
+        <p>Total Price: $<span id="totalPrice">0</span></p>
+        <button id="checkoutBtn">Proceed to Checkout</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <!-- Your footer -->
+  </footer>
+
+  <script src="JS/cart.js"></script>
+</body>
 </html>

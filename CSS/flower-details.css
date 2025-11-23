@@ -1,0 +1,23 @@
+.flower-details-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.flower-details-container img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 15px;
+  margin-bottom: 25px;
+}
+
+.flower-details-container h1 {
+  color: #b13685;
+  margin-bottom: 20px;
+}
+
+.flower-details-container p {
+  font-size: 16px;
+  line-height: 1.6;
+}

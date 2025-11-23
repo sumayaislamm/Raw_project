@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Register</title>
+  <link rel="stylesheet" href="CSS/registration.css" />
+</head>
+<body>
+
+  <div class="register-container">
+    <h2>Create Account</h2>
+    <p class="subtitle">Join us today</p>
+
+    <form id="registerForm" class="register-form">
+      
+      <div class="input-group">
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required />
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required />
+      </div>
+
+      <div class="input-group">
+        <label>Password</label>
+        <input type="password" placeholder="Create a password" required />
+      </div>
+
+      <div class="input-group">
+        <label>Confirm Password</label>
+        <input type="password" placeholder="Confirm password" required />
+      </div>
+
+      <button type="submit" class="register-btn">Register</button>
+    </form>
+
+    <div class="divider">
+      <span>OR</span>
+    </div>
+
+    <button class="google-btn" id="googleRegister">
+      <img src="https://www.svgrepo.com/show/355037/google.svg" alt="Google" />
+      Sign up with Google
+    </button>
+
+    <p class="login-text">
+      Already have an account?
+      <a href="login.html">Login</a>
+    </p>
+  </div>
+
+  <script src="JS/register.js"></script>
+</body>
+</html>
+

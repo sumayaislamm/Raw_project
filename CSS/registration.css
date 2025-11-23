@@ -1,24 +1,24 @@
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(135deg, #b13685, #1a1a1a);
+  background: linear-gradient(135deg, #1a1a1a, #b13685);
+  margin: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0;
 }
 
-.login-container {
+.register-container {
   background: #fff;
-  padding: 35px;
-  width: 350px;
-  border-radius: 15px;
-  box-shadow: 0px 10px 25px rgba(0,0,0,0.15);
-  animation: fadeIn 0.7s ease;
+  padding: 40px;
+  width: 360px;
+  border-radius: 18px;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+  animation: fadeIn 0.8s ease;
 }
 
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
+  from { opacity: 0; transform: translateY(25px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -29,7 +29,7 @@ h2 {
 
 .subtitle {
   text-align: center;
-  color: #666;
+  color: #777;
   margin-bottom: 25px;
 }
 
@@ -39,47 +39,52 @@ h2 {
 
 .input-group label {
   display: block;
-  margin-bottom: 6px;
+  margin-bottom: 5px;
   font-weight: 600;
 }
 
 .input-group input {
   width: 100%;
-  padding: 10px;
-  border-radius: 8px;
+  padding: 11px;
   border: 1px solid #ccc;
+  border-radius: 8px;
   outline: none;
+  transition: 0.3s;
 }
 
-.login-btn {
+.input-group input:focus {
+  border-color: #b13685;
+}
+
+.register-btn {
   width: 100%;
   padding: 12px;
-  margin-top: 10px;
   background: #b13685;
   color: #fff;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-weight: 600;
+  margin-top: 5px;
   transition: 0.3s;
 }
 
-.login-btn:hover {
+.register-btn:hover {
   background: #8a2b68;
 }
 
 /* Divider */
 .divider {
   text-align: center;
-  margin: 15px 0;
+  margin: 18px 0;
   position: relative;
 }
 
 .divider span {
   background: #fff;
-  padding: 0 10px;
-  position: relative;
+  padding: 0 12px;
   z-index: 2;
+  position: relative;
 }
 
 .divider::before {
@@ -97,32 +102,31 @@ h2 {
 .google-btn {
   width: 100%;
   padding: 12px;
+  background: #fff;
   border: 1px solid #ccc;
   border-radius: 8px;
-  background: #fff;
   cursor: pointer;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  gap: 12px;
   font-weight: 600;
-  transition: 0.3s;
 }
 
 .google-btn:hover {
-  background: #f5f5f5;
+  background: #f3f3f3;
 }
 
 .google-btn img {
   width: 20px;
 }
 
-.signup-text {
+.login-text {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 18px;
 }
 
-.signup-text a {
+.login-text a {
   color: #b13685;
   text-decoration: none;
 }
