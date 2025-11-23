@@ -34,7 +34,7 @@ function renderFlowers(list) {
     card.querySelector(".details-btn").addEventListener("click", () => {
       // Save flower data in localStorage to pass to details page
       localStorage.setItem("flowerDetails", JSON.stringify(flower));
-      window.location.href = "flowers-details.html";  // navigate to details page
+      window.location.href = "flower-details.html";  // navigate to details page
     });
 
     flowersContainer.appendChild(card);
