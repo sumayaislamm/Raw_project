@@ -172,11 +172,10 @@ ul {
 /* Card title */
 .card {
   position: relative;
-  /* for button */
   background-color: var(--primary);
   color: rgb(209, 79, 157);
   width: 240px;
-  height: 250px;
+  height: 350px;
   padding: 20px;
   border-radius: 15px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
@@ -195,7 +194,11 @@ ul {
   opacity: 1;
   transform: translateX(0);
 }
-
+.card img{
+  width: 240px;
+  height: 100px;
+  border-radius: 50px;
+}
 .card h3 {
   font-size: 1.2rem;
   margin-bottom: 10px;

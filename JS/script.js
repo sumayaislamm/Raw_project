@@ -11,6 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const card = document.createElement('div');
         card.className = 'card';
         card.innerHTML = `
+        <img src="https://picsum.photos/seed/${index + 1}/500/300" alt="Blog Image">
           <h3>${post.title}</h3>
           <p>${post.body}</p>
           <button class="card-btn">Read More</button>
