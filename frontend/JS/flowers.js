@@ -4,14 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
   let allFlowers = [];
 
   // Fetch flowers from API
-  fetch('https://jsonplaceholder.typicode.com/posts?') // Replace with your real flowers API
+  fetch('http://localhost:5000/flowers?') // Replace with your real flowers API
     .then(res => res.json())
     .then(data => {
       // Convert API data to flower format
       allFlowers = data.map(item => ({
-        name: item.title,
-        desc: item.body,
-        img: `https://picsum.photos/200/150?random=${item.id}` // placeholder image
+        name: item.name,
+        desc: item.description,
+        img: `https://picsum.photos/200/150?random=${item.pictures}` // placeholder image
       }));
       renderFlowers(allFlowers);
     })
