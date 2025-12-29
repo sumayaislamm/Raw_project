@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let allFlowers = [];
 
   // Fetch flowers from API
-  fetch('http://localhost:5000/flowers?') // Replace with your real flowers API
+  fetch('https://raw-project.onrender.com/flowers?') // Replace with your real flowers API
     .then(res => res.json())
     .then(data => {
       // Convert API data to flower format

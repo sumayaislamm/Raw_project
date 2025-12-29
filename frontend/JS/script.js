@@ -4,7 +4,7 @@
 document.addEventListener('DOMContentLoaded', () => {
   const container = document.querySelector('.cards-container');
 
-  fetch('https://jsonplaceholder.typicode.com/posts?_limit=8')
+  fetch('https://raw-project.onrender.com/flowers?_limit=8')
     .then(res => res.json())
     .then(data => {
       data.forEach((post, index) => {
@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
         card.className = 'card';
         card.innerHTML = `
         <img src="https://picsum.photos/seed/${index + 1}/500/300" alt="Blog Image">
-          <h3>${post.title}</h3>
-          <p>${post.body}</p>
+          <h3>Name: ${post.name}</h3>
+          <h5>About: ${post.description}</h5>
+          <p>Color: ${post.color}</p>
+          <p>Origin: ${post.origin}</p>
           <button class="card-btn">Read More</button>
         `;
         container.appendChild(card);
