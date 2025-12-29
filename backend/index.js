@@ -26,9 +26,13 @@ const flowerSchema = new mongoose.Schema({
 const Flower = mongoose.model('Flower', flowerSchema);
 
 // API route to get all flowers
+
 app.get('/flowers', async (req, res) => {
     try {
-        const flowers = await Flower.find();
+        // Get limit from query, default 0 (all)
+        const limit = parseInt(req.query._limit) || 0;
+
+        const flowers = await Flower.find().limit(limit); // apply limit
         res.json(flowers);
     } catch (err) {
         res.status(500).json({ message: err.message });
